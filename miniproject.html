@@ -27,12 +27,12 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        gap: 20px; /* space between header items */
+        gap: 30px; 
       }
 
       .block2 {
         display: flex;
-        margin-top: 75px; /* to avoid overlap with fixed header */
+        margin-top: 75px; 
         height: calc(100vh - 75px);
         background-color: bisque;
       }
@@ -40,6 +40,14 @@
       aside {
         flex: 0 0 100px;
         background-color: aqua;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    
+        
       }
 
       .block3 {
@@ -50,11 +58,15 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+
       }
       footer {
         width: 100%;
         height: 50px;
         background-color: #d05d6c;
+        align-items: center;
+        justify-content: center;
+        display: flex;
       }
     </style>
   </head>
@@ -69,8 +81,8 @@
 
     <div class="block2">
       <aside>
-        <div>Student Form</div>
-        <div>Student Report</div>
+        <div><a href="">Student-Form</a></div>
+        <div><a href="">StudentReport</a></div>
       </aside>
 
       <main class="block3">

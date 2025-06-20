@@ -1,0 +1,106 @@
+<html>
+<head>
+  <style>
+    body {
+      top:0;
+      padding: 20px;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      background-color: aquamarine;
+
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .d1 {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .outer-box {
+      width: 350px;
+      height: 220px;
+      background-color: #87cefa;
+      border: 3px solid #333;
+      border-radius: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .inner-box {
+      width: 150px;
+      height: 100px;
+      background-color: #ffffff;
+      border: #333;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+    }
+
+    .double-inner {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .small-box {
+      width: 80px;
+      height: 80px;
+      background-color: #fff;
+      border: 2px  #333;
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     
+    }
+  </style>
+</head>
+<body>
+
+  <div class="main">
+    <div class="d1">
+      <div class="outer-box">
+        <div class="inner-box">Box</div>
+      </div>
+      <div class="outer-box">
+        <div class="double-inner">
+          <div class="small-box">box1</div>
+          <div class="small-box">box2</div>
+        </div>
+      </div>
+    </div>
+    <div class="d1">
+      <div class="outer-box">
+        <div class="double-inner">
+          <div class="small-box">box1</div>
+          <div class="small-box">box2</div>
+          <div class="small-box">box3</div>
+        </div>
+      </div>
+      <div class="outer-box">
+        <div class="double-inner">
+          <div class="small-box">box1</div>
+          <div class="small-box">box2</div>
+          <div class="small-box">box3</div>
+          <div class="small-box">box4</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
