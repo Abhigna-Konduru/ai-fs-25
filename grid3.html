@@ -1,0 +1,108 @@
+<html>
+    <head>
+<style>
+.container{
+    display: grid;
+grid-template-rows: 100px 1fr;
+height: 100%;
+background-color: #ad0000;
+}
+.header{
+    background-color:#ad0000;
+    display: flex;
+    direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    font-size: 25px;
+    font-family: sans-serif;
+   
+}
+.main{
+    display: grid;
+    background-color:#ad0000; ;
+    grid-template-columns:  1fr;
+    gap: 10px;
+}
+
+.sidebar{
+   flex-wrap: wrap;
+height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    
+}
+.content{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 80% 1fr;
+    gap: 10px;
+   
+    
+}
+.footer{
+    display: flex;
+    background-color:black;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.c1{
+    display: flex;
+    flex-direction: column;
+      justify-content: center;
+    align-items: center;
+   background-color: #007fd7;
+    height: 125%;
+    width: 100%;
+}
+@media( min-width: 640px){
+    .main {
+        grid-template-columns: 150px 1fr;
+    }
+    .sidebar{
+       display: flex;
+    }
+}
+ .w {
+    background-color:antiquewhite;
+ }
+
+</style>
+
+    </head>
+    <body>
+
+<div class="container">
+    <div class="header">
+        <div><img src="logo.jpg" alt="logo" height="50px" width="50px" ></div>
+         <div class="w"><a href="">🕸️Web</a></div>    
+      <div class="w"><a href="">🆘HELP</a></div>   
+       <div class="w"><a href="">☎️Contact</a></div>   
+    </div>
+    <div class="main"> 
+        <div class="sidebar">
+            <div><a href="" ></a></div>
+             <div><a href="">
+             </a></div>
+        </div>
+        <div class="content"> 
+            <div class="c1"> 
+<div style="position: relative;">
+  <img src="spidey.jpg" width="300px" height="300px">
+  <p style="position: absolute; top: 10px; left: 150px; color: white;">Hi people!!</p>
+</div>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+</div>
+
+
+    </body>
+</html>
